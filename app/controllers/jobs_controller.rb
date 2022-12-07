@@ -1,7 +1,7 @@
 class JobsController < ApplicationController
     def index
         jobs = Job.all
-        render json: jobs
+        render json: Job.all
     end
 
     def show
@@ -40,6 +40,6 @@ class JobsController < ApplicationController
     end
 
     def render_params
-        params.permit(:job_title, :description, :qualifications, :deadline, :company_name, :apply)
+        params.permit(:id,:job_title, :description, :qualifications, :deadline, :company_name, :apply)
     end
 end
