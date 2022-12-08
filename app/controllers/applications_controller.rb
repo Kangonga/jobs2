@@ -26,9 +26,8 @@ class ApplicationsController < ApplicationController
      end
  
      def destroy
-         application = application_params
-         application.destroy
-         head :no_content
+         Application.find(params[:id]).destroy
+         render json: Application.all
      end
  
      private
