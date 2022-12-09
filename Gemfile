@@ -7,7 +7,8 @@ ruby "2.7.6"
 gem "rails", "~> 7.0.4"
 
 # Use sqlite3 as the database for Active Record
-gem "sqlite3", "~> 1.4"
+#gem "sqlite3", "~> 1.4"
+gem 'pg'
 
 # Use Active Model has_secure_password
 gem 'bcrypt', '~> 3.1.7'
@@ -36,3 +37,4 @@ end
 gem 'active_model_serializers'
 #faker gem
 gem 'faker'
+gem 'sprockets', '~> 3.7.2'
